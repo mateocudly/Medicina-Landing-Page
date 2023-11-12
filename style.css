@@ -1,0 +1,93 @@
+/* Creacion de variables */
+:root {
+    --color-parrafo: #7D7987;
+    --color-fondo: #458FF6;
+    --color-fondo-activo: #2b80f6;
+}
+
+html {
+    margin: 0;
+    height: 3000px;
+}
+
+* {
+    margin: 0;
+}
+
+.espacio {
+    margin: 6rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1rem 0;
+}
+
+p {
+    margin: 1rem 0;
+    color: var(--color-parrafo);
+}
+
+.texto-servicios p {
+    width: 85%;
+    margin: auto;
+}
+
+.cuadro-servicios {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(250, 250, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+/* Elimina un borde, con box shadow que trae de bootstrap por defecto */
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.img-servicios {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.tarjeta {
+    padding: 1.3rem;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn {
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-bg: var(--color-fondo);
+    --bs-btn-border-color: var(--color-fondo);
+    --bs-btn-hover-color: var(--color-fondo);
+    --bs-btn-hover-bg: var(--color-fondo);
+    --bs-btn-hover-border-color: var(--color-fondo);
+    --bs-btn-focus-shadow-rgb: var(--color-fondo);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--color-fondo);
+    --bs-btn-active-border-color: var(--color-fondo);
+}
+
+.btn {
+    color: #fff;
+    border: solid var(--color-fondo);
+    background-color: var(--color-fondo);
+    padding: .5rem 2rem;
+    border-radius: 60px;
+}
+
+.btn:visited {
+    color: #fff;
+    border: solid var(--color-fondo);
+    background-color: var(--color-fondo);
+}
+
+.btn:hover {
+    color: #fff;
+    border: solid var(--color-fondo-activo);
+    background-color: var(--color-fondo-activo);
+}
