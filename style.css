@@ -7,7 +7,7 @@
 
 html {
     margin: 0;
-    height: 3000px;
+    height: 5000px;
 }
 
 * {
@@ -32,6 +32,12 @@ p {
     color: var(--color-parrafo);
 }
 
+.text-primary {
+    color: var(--color-fondo);
+}
+
+
+
 .texto-servicios p {
     width: 85%;
     margin: auto;
@@ -40,6 +46,10 @@ p {
 .cuadro-servicios {
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(250, 250, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+.nav-links a:hover {
+    color: var(--color-fondo);
 }
 
 /* Elimina un borde, con box shadow que trae de bootstrap por defecto */
@@ -58,36 +68,103 @@ p {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.contain-linea {
+    height: .1rem;
+    width: 5rem;
+    border-radius: 10px;
+}
+
+/* Estilos para carousel de testimonios */
+.testimonio-linea {
+    height: .1rem;
+    width: 2rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.carousel-clientes {
+    max-width: 85%;
+    border-radius: 24px;
+    background: linear-gradient(208deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.foto-perfil {
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+}
+
+.owl-carousel .item {
+    margin: 1rem;
+}
+
+.owl-carousel p {
+    color: #fff;
+}
+
+/* Modificar el estilo del botón "owl-next" */
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover
+{
+    background: none;
+}
+
+.puntos {
+    top: 0;
+    right: 0;
+    width: 5rem;
+    position: absolute;
+}
+
+/* Configuraciones a botones */
 .btn {
+    padding: .5rem 2rem;
+    border-radius: 60px;
+    transition: all .3s ease-in-out;
+}
+
+.btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-hover-color: #fff;
     --bs-btn-bg: var(--color-fondo);
     --bs-btn-border-color: var(--color-fondo);
-    --bs-btn-hover-color: var(--color-fondo);
+    --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: var(--color-fondo);
     --bs-btn-hover-border-color: var(--color-fondo);
     --bs-btn-focus-shadow-rgb: var(--color-fondo);
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: var(--color-fondo);
+    --bs-btn-active-bg: var(--color-fondo-activo);
     --bs-btn-active-border-color: var(--color-fondo);
 }
 
-.btn {
-    color: #fff;
-    border: solid var(--color-fondo);
-    background-color: var(--color-fondo);
-    padding: .5rem 2rem;
-    border-radius: 60px;
-}
-
-.btn:visited {
-    color: #fff;
-    border: solid var(--color-fondo);
-    background-color: var(--color-fondo);
-}
-
-.btn:hover {
-    color: #fff;
-    border: solid var(--color-fondo-activo);
-    background-color: var(--color-fondo-activo);
+.btn-outline-primary {
+    --bs-btn-color: var(--color-fondo);
+    --bs-btn-hover-color: var(--color-fondo);
+    --bs-btn-bg: #fff;
+    --bs-btn-border-color: var(--color-fondo);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--color-fondo);
+    --bs-btn-hover-border-color: var(--color-fondo);
+    --bs-btn-focus-shadow-rgb: var(--color-fondo);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--color-fondo-activo);
+    --bs-btn-active-border-color: var(--color-fondo);
 }
