@@ -7,7 +7,7 @@
 
 html {
     margin: 0;
-    height: 5000px;
+    height: 6000px;
 }
 
 * {
@@ -35,8 +35,6 @@ p {
 .text-primary {
     color: var(--color-fondo);
 }
-
-
 
 .texto-servicios p {
     width: 85%;
@@ -122,8 +120,7 @@ p {
 }
 
 .owl-carousel .owl-nav button.owl-next:hover,
-.owl-carousel .owl-nav button.owl-prev:hover
-{
+.owl-carousel .owl-nav button.owl-prev:hover {
     background: none;
 }
 
@@ -132,6 +129,39 @@ p {
     right: 0;
     width: 5rem;
     position: absolute;
+}
+
+/* Estilos para apartado de articulo */
+.container-articulos {
+    max-width: 85%;
+}
+
+.tarjeta-articulo {
+    border-radius: 5%;
+}
+
+.tarjeta-articulo img {
+    border-radius: 5% 5% 0 0;
+}
+
+.img-articulo {
+    width: 100%;
+    max-height: 10rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-articulo * {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
 }
 
 /* Configuraciones a botones */
