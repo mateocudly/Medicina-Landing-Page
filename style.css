@@ -7,7 +7,6 @@
 
 html {
     margin: 0;
-    height: 6000px;
 }
 
 * {
@@ -162,6 +161,28 @@ p {
     padding: 0;
     cursor: pointer;
     user-select: none;
+}
+
+/* Apartado para estilos para pie de pagina */
+footer {
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+
+footer * {
+    color: #fff;
+}
+
+footer img {
+    left: 0;
+    bottom: 0;
+    width: 3.5rem;
+    position: absolute;
+}
+
+footer h6 {
+    font-weight: bold;
 }
 
 /* Configuraciones a botones */

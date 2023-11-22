@@ -55,19 +55,19 @@
                         </li>
 
                         <li class="nav-item mx-3">
-                            <a class="nav-link" aria-current="page" href="#">Buscar doctor</a>
+                            <a class="nav-link" aria-current="page" href="#proveedores">Buscar doctor</a>
                         </li>
 
                         <li class="nav-item mx-3">
-                            <a class="nav-link" aria-current="page" href="#">App</a>
+                            <a class="nav-link" aria-current="page" href="#app">App</a>
                         </li>
 
                         <li class="nav-item mx-3">
-                            <a class="nav-link" aria-current="page" href="#">Testimonios</a>
+                            <a class="nav-link" aria-current="page" href="#testimonios">Testimonios</a>
                         </li>
 
                         <li class="nav-item mx-3">
-                            <a class="nav-link" aria-current="page" href="#">Acerce de</a>
+                            <a class="nav-link" aria-current="page" href="#articulos">Artículos</a>
                         </li>
                     </ul>
                 </div>
@@ -222,7 +222,7 @@
     </div>
 
     <!-- Banner con contenido 1 -->
-    <div class="container-fluid espacio">
+    <div class="container-fluid espacio" id="proveedores">
         <div class="row row-cols-1 row-cols-md-2 align-items-center">
             <div class="col">
                 <img src="img/contain.png" alt="contain.png" class="img-fluid">
@@ -250,7 +250,7 @@
     </div>
 
     <!-- Banner con contenido 2 -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="app">
         <div class="row row-cols-1 row-cols-md-2 flex-column-reverse flex-md-row">
             <div class="col p-4 p-sm-5">
                 <h2 class="pb-4">
@@ -280,7 +280,7 @@
     </div>
 
     <!-- Apartado de reseñas de clientes -->
-    <div class="container-fluid carousel-clientes espacio">
+    <div class="container-fluid carousel-clientes espacio" id="testimonios">
         <p class="text-light text-center fs-5 pt-4">
             La opinión de nuestros clientes
         </p>
@@ -385,7 +385,7 @@
     </div>
 
     <!-- Apartado de articulos -->
-    <div class="container espacio container-articulos m-auto">
+    <div class="container espacio container-articulos m-auto" id="articulos">
         <div class="text-center mb-4">
             <h2>
                 Consulte nuestro último artículo
@@ -469,7 +469,44 @@
                 </div>
             </div>
         </div>
+
+        <div class="text-center mt-5">
+            <button class="btn btn-outline-primary">Leer más</button>
+        </div>
     </div>
+
+    <!-- Pie de pagina -->
+    <footer class="container-fluid mt-5 p-5">
+        <div class="row">
+            <div class="col col-md-6 col-12">
+                <h6 class="text-md-start text-center">Contactanos</h6>
+
+                <p class="">
+                    Ofrecemos asistencia sanitaria progresiva y asequible, accesible desde el móvil y en línea para
+                    todos.
+                </p>
+            </div>
+
+            <div class="col col-md-3">
+                <h6>Compañía</h6>
+                <p>Acerca</p>
+                <p>Testimonios</p>
+                <p>Encontrar doctor</p>
+                <p>App</p>
+            </div>
+
+            <div class="col col-md-3">
+
+                <h6>Ayuda</h6>
+                <p>Centro de ayuda</p>
+                <p>Contactar con el servicio de asistencia</p>
+                <p>Instrucciones</p>
+                <p>Cómo funciona</p>
+            </div>
+        </div>
+
+        <img src="img/puntos.png" alt="puntos.png">
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
