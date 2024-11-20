@@ -4,112 +4,72 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Medicina</title>
+    <title>Centro de Medicina Funcional e Integrativa</title>
     <link rel="icon" type="image/x-icon" href="/img/logo.png">
     <link rel="stylesheet" href="owlcarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/css/owl.theme.default.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-style.css"> <!-- Enlace al archivo CSS personalizado -->
 </head>
 
 <body>
-    <!-- Menu de navegacion -->
-    <!-- La clase navbar-expand-lg permite que el menu solo se vuelva responsive en la version de telefono-->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <!-- Logo principal -->
-            <div class="mx-lg-5">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" alt="Logo" width="24" height="24" class="d-inline-block">
-                    Medicina
-                </a>
-            </div>
-
-            <!-- Boton hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <!-- Titulo de menu desplegado en vista movil -->
-                <div class="offcanvas-header">
-                    <!-- Logo de la pagina en version movil -->
-                    <div class="mx-lg-5">
-                        <a class="navbar-brand" href="#">
-                            <img src="img/logo.png" alt="Logo" width="24" height="24" class="d-inline-block">
-                            Medicina
-                        </a>
-                    </div>
-                    <!-- Boton para cerrar menu movil -->
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <!-- Cabecera con fondo degradado -->
+    <header class="header">
+        <div class="container text-center text-md-start py-3">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <a class="navbar-brand" href="#">
+                        <div class="logo-circle">
+                            <img src="img/logo.png" alt="Logo" width="40" height="40">
+                        </div>
+                        <div class="brand-text">
+                            <span>ReVivir Pilar</span>
+                            <small>Medicina Funcional e Integrativa<br>
+                                Dra. Carina Bracalente y Dr. Pablo Francese<br></small>
+                        </div>
+                    </a>
                 </div>
-
-                <!-- Links de menu -->
-                <div class="offcanvas-body justify-content-end nav-links">
-                    <ul class="navbar-nav mx-5">
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" aria-current="page" href="#proveedores">Buscar doctor</a>
-                        </li>
-
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" aria-current="page" href="#app">App</a>
-                        </li>
-
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" aria-current="page" href="#testimonios">Testimonios</a>
-                        </li>
-
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" aria-current="page" href="#articulos">Artículos</a>
-                        </li>
-                    </ul>
+                <div class="col-12 col-md-6">
+                    <div class="menu-categorias">
+                        <ul class="list-unstyled d-flex flex-column flex-md-row justify-content-center">
+                            <li><a href="#turnos">Turnos</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#profesionales">Profesionales</a></li>
+                            <li><a href="#productos">Productos</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Cabecero de la pagina -->
+    <!-- Contenido principal -->
     <div class="container text-center">
         <div class="row align-items-center flex-md-row flex-column-reverse">
-            <!-- Si llega al tamaño mediano o mas, divide las columnas en 6 y 6 para que se coloque una a la par de la otra -->
             <div class="col-12 col-md-6">
-                <h1 class="text-start">
-                    Asistencia médica virtual
-                    para usted
-                </h1>
-
+                <h1 class="text-start">Quienes Somos</h1>
                 <p class="text-start">
-                    Ofrecemos una asistencia médica progresiva y accesible para todas las personas.
+                    Somos un grupo de médicos dedicados a la Medicina funcional e integrativa para rejuvenecer a las personas y romper con los paradigmas instalados por la industria.
                 </p>
-                <p class="btn btn-primary my-2">
-                    Consulta hoy
-                </p>
+                <p class="btn btn-primary my-2">Sacar un Turno</p>
             </div>
-
             <div class="col-12 col-md-6">
-                <img src="img/header.png" alt="header" class="img-fluid">
+                <div class="img-container">
+                    <img src="img/header.png" alt="header">
+                </div>
             </div>
         </div>
     </div>
+
 
     <!-- Apartado Nuestros servicios -->
     <div class="container-fluid text-center espacio texto-servicios">
         <h1>
             Nuestros servicios
-        </h1>
-
-        <p>
-            Le ofrecemos las mejores opciones para usted. Ajústelo a sus necesidades de salud y asegúrese de que se
-            somete a un tratamiento con nuestros médicos altamente calificados, puede consultar con nosotros qué tipo de
-            servicio es adecuado para su salud.
-        </p>
+        </h1>  
     </div>
 
     <!-- Apartado de cuadro con todos los servicios -->
@@ -121,12 +81,11 @@
                         <img src="img/lupa.png" alt="lupa.png" class="img-servicios">
 
                         <h5 class="card-title">
-                            Buscar médico
+                            Consultas
                         </h5>
 
                         <p class="card-text">
-                            Elija a su médico entre miles de especialistas, médicos de cabecera y hospitales de
-                            confianza.
+                            Contamos con profesionales especializados para asesorar y aclarar tus dudas sobre el nuevo paradigma de la salud.
                         </p>
                     </div>
                 </div>
@@ -138,11 +97,11 @@
                         <img src="img/medicamento.png" alt="medicamento.png" class="img-servicios">
 
                         <h5 class="card-title">
-                            Farmacia en línea
+                            Drip Center
                         </h5>
 
                         <p class="card-text">
-                            Compre sus medicamentos con nuestra aplicación móvil con un sencillo sistema de entrega.
+                            En nuestro Drip Center, ofrecemos tratamientos de terapia intravenosa para revitalizar tu cuerpo y ayudarte a recuperar la energía que necesitas para sentirte más joven y activo. Nuestras infusiones fortalecen tu sistema inmunológico, mejoran tu vitalidad y aceleran la recuperación, para disfrutar de una vida más plena. Te ofrecemos una experiencia segura y relajante para que te sientas renovado y rejuvenecido.
                         </p>
                     </div>
                 </div>
@@ -154,11 +113,11 @@
                         <img src="img/formulario.png" alt="formulario.png" class="img-servicios">
 
                         <h5 class="card-title">
-                            Consulta
+                            Productos
                         </h5>
 
                         <p class="card-text">
-                            Consulta gratuita con nuestros médicos de confianza y obtén las mejores recomendaciones
+                            Vitaminas, polvos, suplementación. Nos especializamos en ofrecer productos de primera calidad para mejorar tu calidad de vida.
                         </p>
                     </div>
                 </div>
@@ -172,11 +131,11 @@
                         <img src="img/expediente.png" alt="expediente.png" class="img-servicios">
 
                         <h5 class="card-title">
-                            Información detallada
+                            Tratamientos avanzados con Hormonas Bioidénticas
                         </h5>
 
                         <p class="card-text">
-                            Consulta gratis con nuestros médicos de confianza y obtén las mejores recomendaciones
+                            Tratamiento de pellets y chips anti-age, diseñados para restaurar el equilibrio hormonal y promover un rejuvenecimiento integral. Estos tratamientos personalizados están enfocados en mejorar la energía, la vitalidad y el bienestar general tanto en hombres como en mujeres.
                         </p>
                     </div>
                 </div>
@@ -188,11 +147,11 @@
                         <img src="img/botiquin.png" alt="botiquin.png" class="img-servicios">
 
                         <h5 class="card-title">
-                            Atención de urgencia
+                            Estética
                         </h5>
 
                         <p class="card-text">
-                            Puede obtener atención de urgencia 24/7 para usted o sus hijos y sus seres queridos.
+                            Colocamos toxina botulínica, rellenos con hialurónico, plasma rico en plaquetas, pectonas, vacunas anti-age, ra diez, profailo.
                         </p>
                     </div>
                 </div>
@@ -204,11 +163,11 @@
                         <img src="img/seguimiento.png" alt="seguimiento.png" class="img-servicios">
 
                         <h5 class="card-title">
-                            Seguimiento
+                            Kinesiología
                         </h5>
 
                         <p class="card-text">
-                            Siga y respalde todo su historial médico y sus datos sanitarios con nosotros.
+                            Contamos con sesiones personalizadas de Kinesiología para atender tus lesiones.
                         </p>
                     </div>
                 </div>
@@ -222,7 +181,7 @@
     </div>
 
     <!-- Banner con contenido 1 -->
-    <div class="container-fluid espacio" id="proveedores">
+    <div class="container-fluid espacio" id="servicios">
         <div class="row row-cols-1 row-cols-md-2 align-items-center">
             <div class="col">
                 <img src="img/contain.png" alt="contain.png" class="img-fluid">
@@ -230,19 +189,17 @@
 
             <div class="col p-4 p-sm-5">
                 <h2 class="pb-4">
-                    Principales proveedores sanitarios
+                    Mejora tu calidad de vida
                 </h2>
 
                 <div class="contain-linea"></div>
 
                 <p class="my-3">
-                    Ofrecemos una asistencia sanitaria progresiva y asequible, accesible desde el móvil y en línea para
-                    todo el mundo. Para nosotros, no es solo trabajo. Estamos orgullosos
-                    de las soluciones que ofrecemos.
+                    Con la Dra. Carina Bracalente vas a aprender los mejores métodos para mejorar tu calidad de vida en el día a día
                 </p>
 
                 <div class="text-center text-md-start">
-                    <button class="btn btn-outline-primary">Leer más</button>
+                    <button class="btn btn-outline-primary">Instagram</button>
                 </div>
             </div>
 
@@ -250,7 +207,7 @@
     </div>
 
     <!-- Banner con contenido 2 -->
-    <div class="container-fluid" id="app">
+    <div class="container-fluid" id="servicios">
         <div class="row row-cols-1 row-cols-md-2 flex-column-reverse flex-md-row">
             <div class="col p-4 p-sm-5">
                 <h2 class="pb-4">
@@ -280,7 +237,7 @@
     </div>
 
     <!-- Apartado de reseñas de clientes -->
-    <div class="container-fluid carousel-clientes espacio" id="testimonios">
+    <div class="container-fluid carousel-clientes espacio" id="profesionales">
         <p class="text-light text-center fs-5 pt-4">
             La opinión de nuestros clientes
         </p>
@@ -385,7 +342,7 @@
     </div>
 
     <!-- Apartado de articulos -->
-    <div class="container espacio container-articulos m-auto" id="articulos">
+    <div class="container espacio container-articulos m-auto" id="productos">
         <div class="text-center mb-4">
             <h2>
                 Consulte nuestro último artículo
@@ -476,6 +433,7 @@
     </div>
 
     <!-- Pie de pagina -->
+    <div class="container espacio container-contacto m-auto" id="contacto">
     <footer class="container-fluid mt-5 p-5">
         <div class="row">
             <div class="col col-md-6 col-12">
@@ -506,6 +464,8 @@
         </div>
 
         <img src="img/puntos.png" alt="puntos.png">
+    </div>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

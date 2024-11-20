@@ -1,22 +1,78 @@
-/* Creacion de variables */
 :root {
     --color-parrafo: #7D7987;
-    --color-fondo: #458FF6;
-    --color-fondo-activo: #2b80f6;
-}
-
-html {
-    margin: 0;
-}
-
-* {
-    margin: 0;
+    --color-fondo: #79bcdb;
+    --color-fondo-activo: #79bcdb;
 }
 
 .espacio {
-    margin: 6rem 0;
+    margin: 4rem 0;
 }
 
+/* Estilos para el título en el menú de navegación */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos para el título */
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Alinea el logo y el texto verticalmente */
+    gap: 0.5rem; /* Reduce el espacio entre el logo y el texto */
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+
+.logo-circle img {
+    width: 100%; /* Ajusta el tamaño de la imagen al círculo */
+    height: auto;
+}
+
+/* Texto */
+.brand-text {
+    display: flex;
+    flex-direction: column; /* Apila el título y subtítulo en columna */
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+    line-height: 1.2; /* Ajusta la separación entre líneas */
+}
+
+.brand-text span {
+    font-size: 1.8rem; /* Tamaño del título principal */
+    font-weight: 700; /* Negrita */
+    color: #ffffff;
+}
+
+.brand-text small {
+    font-size: 4rem; /* Tamaño del subtítulo */
+    font-weight: 500; /* Regular */
+    color: #f8f8f8; /* Color tenue */
+    margin-top: 0.02rem; /* Espaciado entre el título y el subtítulo */
+}
+/* Fondo de pantalla para todo el cuerpo de la página */
+
+/* Ajusta el tamaño máximo de las imágenes */
+img {
+    max-width: 100% !important; /* No debe ocupar más del 100% del ancho de su contenedor */
+    height: auto !important;    /* Mantiene la proporción de la imagen */
+}
+
+/* Imagen en el header */
+header img {
+    max-width: 50% !important;  /* Ajusta la imagen del header al 50% del ancho disponible */
+    height: auto !important;    /* Mantiene la proporción */
+    margin: 0 auto;             /* Centra la imagen en su contenedor */
+    display: block;             /* Asegura que la imagen sea un bloque */
+}
+
+/* Añadido para controlar el contenedor */
+.img-container {
+    width: 70%;
+    display: flex;
+    justify-content: center; /* Centra la imagen en su contenedor */
+}
+
+.img-container img {
+    max-width: 50%;  /* Asegura que la imagen no exceda el 50% del contenedor */
+    height: auto;
+}
 h1,
 h2,
 h3,
@@ -30,11 +86,84 @@ p {
     margin: 1rem 0;
     color: var(--color-parrafo);
 }
+.header {
+    background: linear-gradient(183deg, #a2b2c7 -8.57%, #79bcdb 82.96%);
+    color: #ffffff;
+    margin-bottom: 6rem; /* Espacio adicional debajo del header */
+}
 
+.logo-circle {
+    width: 80px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 80px; /* Debe ser igual al ancho para formar un círculo */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    background-color: #ffffff; /* Color de fondo del círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-right: 20px; /* Espacio entre el círculo y el texto */
+}
+
+.logo-circle img {
+    width: 100px; /* Tamaño del logo */
+    height: 100px; /* Tamaño del logo */
+    object-fit: contain; /* Asegura que la imagen no se distorsione */
+}
+.header .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar-brand small {
+    font-size: 0.7em;
+    font-weight: normal;
+    color: #f0f0f0;
+    margin-left: 1px;
+}
+
+.menu-categorias {
+    margin: 0 auto; /* Centra el recuadro */
+    padding: 0.5rem 1rem; /* Espaciado interno para el contenido */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 50px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: inline-block; /* Ajusta el ancho al contenido */
+}
+
+.menu-categorias ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Elimina los puntos de lista */
+    display: flex; /* Coloca los elementos en línea */
+    justify-content: center; /* Centra los elementos */
+    gap: 1rem; /* Espaciado entre categorías */
+}
+
+.menu-categorias li {
+    margin: 0; /* Elimina márgenes innecesarios */
+}
+
+.menu-categorias a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    display: inline-block; /* Asegura alineación correcta */
+    padding: 5px 10px; /* Espaciado interno de los enlaces */
+    transition: color 0.3s ease;
+}
+
+.menu-categorias a:hover {
+    color: #79bcdb; /* Color en hover */
+}
 .text-primary {
     color: var(--color-fondo);
 }
-
+.texto-servicios h1 {
+    margin-top: 8rem; /* Espaciado superior */
+    font-size: 3rem; /* Ajuste de tamaño del texto (opcional) */
+}
 .texto-servicios p {
     width: 85%;
     margin: auto;
@@ -43,7 +172,60 @@ p {
 .cuadro-servicios {
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(250, 250, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    padding: 2rem 1rem; /* Espaciado interno para el contenedor */
 }
+
+.cuadro-servicios .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas */
+    gap: 2rem; /* Espaciado entre filas y columnas */
+}
+
+.cuadro-servicios .col {
+    display: flex;
+    flex: 1 1 calc(30% - 1rem); /* Ajusta el tamaño según el diseño */
+    max-width: calc(30% - 1rem); /* Máximo 30% del ancho del contenedor */
+    min-width: 280px; /* Asegura un tamaño mínimo para tarjetas pequeñas */
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #79bcdb; /* Contorno azul */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px); /* Eleva el cuadro ligeramente */
+    box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.15); /* Aumenta la sombra */
+}
+
+.tarjeta img.img-servicios {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.tarjeta h5 {
+    font-size: 1.25rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.tarjeta p {
+    font-size: 1rem;
+    color: #7D7987;
+    line-height: 1.6;
+}
+
 
 .nav-links a:hover {
     color: var(--color-fondo);
@@ -64,7 +246,15 @@ p {
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
+/* Ajustar el tamaño de las imágenes del banner */
+#servicios img {
+    max-width: 100%; /* Asegura que las imágenes sean responsivas */
+    max-height: 300px; /* Limita la altura máxima a 300px (ajústalo según prefieras) */
+    object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+    display: block; /* Elimina el espacio en línea alrededor de la imagen */
+    margin-left: auto; /* Centra la imagen horizontalmente */
+    margin-right: auto; /* Centra la imagen horizontalmente */
+}
 .contain-linea {
     height: .1rem;
     width: 5rem;
@@ -84,7 +274,7 @@ p {
 .carousel-clientes {
     max-width: 85%;
     border-radius: 24px;
-    background: linear-gradient(208deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    background: linear-gradient(183deg, #a2b2c7 -8.57%, #79bcdb 82.96%);
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -167,7 +357,7 @@ p {
 footer {
     position: relative;
     bottom: 0;
-    background: linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    background: linear-gradient(183deg, #a2b2c7 -8.57%, #79bcdb 82.96%);
 }
 
 footer * {
@@ -218,4 +408,4 @@ footer h6 {
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: var(--color-fondo-activo);
     --bs-btn-active-border-color: var(--color-fondo);
-}
+} 
