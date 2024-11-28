@@ -1,5 +1,5 @@
 :root {
-    --color-parrafo: #7D7987;
+    --color-parrafo: #303030;
     --color-fondo: #79bcdb;
     --color-fondo-activo: #79bcdb;
 }
@@ -41,10 +41,10 @@
 }
 
 .brand-text small {
-    font-size: 4rem; /* Tamaño del subtítulo */
-    font-weight: 500; /* Regular */
-    color: #f8f8f8; /* Color tenue */
-    margin-top: 0.02rem; /* Espaciado entre el título y el subtítulo */
+    font-size: 1.05rem !important; /* Tamaño del subtítulo */
+    font-weight: 500 !important; /* Regular */
+    color: #ffffff !important; /* Color tenue */
+    margin-top: 0.02rem !important; /* Espaciado entre el título y el subtítulo */
 }
 /* Fondo de pantalla para todo el cuerpo de la página */
 
@@ -190,15 +190,10 @@ p {
 }
 
 .tarjeta {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 1.5rem;
-    border-radius: 10px;
-    border: 1px solid #79bcdb; /* Contorno azul */
+    padding: 0; /* Elimina el padding interno para alinear contenido con la imagen */
+    overflow: hidden; /* Asegura que los elementos internos no sobresalgan */
+    border-radius: 10px; /* Bordes redondeados generales */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    background-color: #ffffff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -208,9 +203,11 @@ p {
 }
 
 .tarjeta img.img-servicios {
-    width: 50px;
-    height: auto;
-    margin-bottom: 1rem;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible en la tarjeta */
+    max-height: 200px; /* Define una altura máxima razonable */
+    object-fit: cover; /* Asegura que la imagen mantenga proporciones sin deformarse */
+    margin-bottom: 1rem; /* Mantén el margen inferior */
+    border-radius: 10px 10px 0 0; /* Opcional: bordes superiores redondeados */
 }
 
 .tarjeta h5 {
@@ -222,7 +219,7 @@ p {
 
 .tarjeta p {
     font-size: 1rem;
-    color: #7D7987;
+    color: #353535;
     line-height: 1.6;
 }
 
@@ -237,15 +234,21 @@ p {
 }
 
 .img-servicios {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 100%; /* Ocupa todo el ancho de la tarjeta */
+    max-height: 10rem; /* Define una altura máxima */
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+    border-radius: 10px 10px 0 0; /* Bordes superiores redondeados */
 }
-
-.tarjeta {
-    padding: 1.3rem;
-    border-radius: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
+    .tarjeta {
+        padding: 0; /* Elimina el padding interno para alinear contenido con la imagen */
+        overflow: hidden; /* Asegura que los elementos internos no sobresalgan */
+        border-radius: 10px; /* Bordes redondeados generales */
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .tarjeta .card-body {
+        padding: 1rem; /* Añade espacio interno solo al contenido */
+    }
 /* Ajustar el tamaño de las imágenes del banner */
 #servicios img {
     max-width: 100%; /* Asegura que las imágenes sean responsivas */
@@ -353,11 +356,11 @@ p {
     user-select: none;
 }
 
-/* Apartado para estilos para pie de pagina */
 footer {
     position: relative;
     bottom: 0;
     background: linear-gradient(183deg, #a2b2c7 -8.57%, #79bcdb 82.96%);
+    padding: 40px 20px; /* Agregado espaciado para mayor aire en el footer */
 }
 
 footer * {
@@ -369,10 +372,75 @@ footer img {
     bottom: 0;
     width: 3.5rem;
     position: absolute;
+    /* Si necesitas el logo centrado en el footer, cambiar a */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
+/* Estilo para los títulos dentro del footer */
 footer h6 {
     font-weight: bold;
+    text-align: center; /* Centrado para los títulos */
+    margin-bottom: 20px;
+}
+
+/* Estilo de los enlaces en el pie de página */
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+footer .list-unstyled li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .list-unstyled li a:hover {
+    color: #f1f1f1; /* Color al pasar el mouse */
+}
+
+/* Diseño de las redes sociales */
+footer .fs-4 {
+    font-size: 1.5rem;
+}
+
+/* Estilo de los botones (Llamar y Enviar correo) */
+footer .btn-outline-light {
+    border: 1px solid #fff;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer .btn-outline-light:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Separación de las secciones con un margen */
+footer .row > .col {
+    margin-bottom: 30px;
+}
+
+/* Línea divisoria */
+.contain-linea {
+    height: 1px;
+    background-color: #fff;
+    margin: 30px 0;
+}
+
+/* Ajuste para texto de derechos reservados */
+footer .text-center p {
+    margin-top: 20px;
+}
+
+/* Estilo para la sección de contacto */
+footer .d-flex a {
+    margin-right: 10px;
+}
+
+/* Sección de compañía */
+footer .col-md-3 ul li {
+    margin-bottom: 12px;
 }
 
 /* Configuraciones a botones */
@@ -409,3 +477,38 @@ footer h6 {
     --bs-btn-active-bg: var(--color-fondo-activo);
     --bs-btn-active-border-color: var(--color-fondo);
 } 
+
+/* Estilo del botón de WhatsApp */
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #whatsapp-button img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Estilo para el contenedor del mapa */
+.mapa-container {
+    background-color: #87a2af;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Asegura que el mapa se recorte bien dentro del cuadro */
+    padding: 10px; /* Espaciado alrededor del mapa */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo para el iframe dentro del contenedor del mapa */
+.mapa-container iframe {
+    border-radius: 10px; /* Bordes redondeados para el iframe */
+}
