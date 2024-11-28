@@ -54,13 +54,7 @@ img {
     height: auto !important;    /* Mantiene la proporción de la imagen */
 }
 
-/* Imagen en el header */
-header img {
-    max-width: 50% !important;  /* Ajusta la imagen del header al 50% del ancho disponible */
-    height: auto !important;    /* Mantiene la proporción */
-    margin: 0 auto;             /* Centra la imagen en su contenedor */
-    display: block;             /* Asegura que la imagen sea un bloque */
-}
+
 
 /* Añadido para controlar el contenedor */
 .img-container {
@@ -105,8 +99,8 @@ p {
 }
 
 .logo-circle img {
-    width: 100px; /* Tamaño del logo */
-    height: 100px; /* Tamaño del logo */
+    width: 80px !important; /* Tamaño del logo */
+    height: 80px !important; /* Tamaño del logo */
     object-fit: contain; /* Asegura que la imagen no se distorsione */
 }
 .header .navbar-brand {
@@ -356,25 +350,33 @@ p {
     user-select: none;
 }
 
+/* Logo redondeado en el footer */
+.logo-circle-footer {
+    width: 80px; /* Ajusta el tamaño del círculo */
+    height: 80px; /* Debe ser igual al ancho para formar un círculo */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    background-color: #ffffff; /* Color de fondo del círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-right: 20px; /* Espacio entre el círculo y el texto */
+    margin-top: -10px; /* Para ajustarlo más cerca del borde superior */
+}
+
+/* Estilo de las imágenes dentro del logo circular */
+.logo-circle-footer img {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: 50px; /* Ajusta el tamaño del logo */
+    object-fit: contain; /* Asegura que la imagen no se distorsione */
+}
+
+/* Pie de página */
 footer {
     position: relative;
     bottom: 0;
     background: linear-gradient(183deg, #a2b2c7 -8.57%, #79bcdb 82.96%);
-    padding: 40px 20px; /* Agregado espaciado para mayor aire en el footer */
-}
-
-footer * {
-    color: #fff;
-}
-
-footer img {
-    left: 0;
-    bottom: 0;
-    width: 3.5rem;
-    position: absolute;
-    /* Si necesitas el logo centrado en el footer, cambiar a */
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 40px 20px; /* Espaciado adicional en el pie de página */
 }
 
 /* Estilo para los títulos dentro del footer */
